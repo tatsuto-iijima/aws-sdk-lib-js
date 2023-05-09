@@ -21,13 +21,21 @@
     "lint": "eslint '*.ts' --quiet --fix",
     "format": "prettier --write .",
     "compile": "tsc",
+    "cdk:deploy": "./bin/test-cdk.sh deploy --require-approval never",
+    "cdk:destroy": "./bin/test-cdk.sh destroy --force",
     "test": "jest"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudformation": "^3.328.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.1",
     "@types/node": "^20.1.0",
+    "@types/uuid": "^9.0.1",
     "@typescript-eslint/eslint-plugin": "^5.59.5",
     "@typescript-eslint/parser": "^5.59.5",
+    "aws-cdk-lib": "^2.78.0",
+    "constructs": "^10.2.17",
     "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -35,6 +43,7 @@
     "prettier": "^2.8.8",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "uuid": "^9.0.0"
   }
 }
