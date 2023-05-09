@@ -1,0 +1,17 @@
+*.ts
+!*.d.ts
+.eslintignore
+.eslintrc.js
+.node-version
+.prettierignore
+.prettierrc.js
+jest.config.ts
+tsconfig.json
+
+bin
+test
+coverage
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
