@@ -21,8 +21,6 @@
     "lint": "eslint '*.ts' --quiet --fix",
     "format": "prettier --write .",
     "compile": "tsc",
-    "cdk:deploy": "./bin/test-cdk.sh deploy --require-approval never",
-    "cdk:destroy": "./bin/test-cdk.sh destroy --force",
     "test": "jest"
   },
   "dependencies": {
